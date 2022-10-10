@@ -3,6 +3,8 @@
 :root{
 --main-color: #212121;
 --second-color: #757575;
+--third-color:  #FFFFFF;
+--background-main-footer: #2F303A;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -24,6 +26,13 @@ body {
 }
 .visually-hidden {  
     position: absolute;  width: 1px;  height: 1px;  margin: -1px;  border: 0;  padding: 0;  white-space: nowrap;  clip-path: inset(100%);  clip: rect(0 0 0 0);  overflow: hidden;
+}
+.header-background,
+.background-photo{
+    background-color: var(--third-color);
+}
+.background-about{ 
+    background-color: #F5F4FA;
 }
 
 /*HEADER*/
@@ -50,23 +59,24 @@ body {
    color: var(--main-color);
 }
 .header-contacts{
-     color: var(--second-color);
+    color: var(--second-color);
 }
 /*HERO STUDIO*/
 .main-section{
     background-color: 
-    #2F303A;
+    var(--background-main-footer)
     }
 .main-section-title{
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: calc(60 / 44);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--third-color);
 }
 .button{
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -74,8 +84,8 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--main-color);
-    background: #F5F4FA;
+    color: var(--third-color);
+    background-color:  #2196F3;
     cursor: pointer;
 }
     
@@ -94,6 +104,9 @@ body {
      letter-spacing: 0.03em;
      color: var(--second-color);
 }
+
+
+    
 .about{
     font-weight: 700;
     font-size: 36px;
@@ -119,21 +132,22 @@ body {
 
 /*HERO PORTFOLIO*/
 .main-btn{
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-color);
-    background: #F5F4FA;
+    color: var(--third-color);
+    background:  #2196F3;
     cursor: pointer;
 }
 .main-btn:hover,
 .main-btn:focus,
 .button:hover,
 .button:focus {
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: #188CE8
+
 }
 
 .title{
@@ -154,10 +168,10 @@ body {
 
     /*FOOTER*/
     .footer{
-        background-color: #2F303A;
+        background-color: var(--background-main-footer)
     }
     .second-part{
-      color:#FFFFFF
+      color: var(--third-color)
     }
     .footer-link{
         font-weight: 400;
@@ -166,10 +180,13 @@ body {
         letter-spacing: 0.03em;
     }
     .footer-adress{
-        color: #FFFFFF;
+        color: var(--third-color);
     }
     .footer-contacts{
         color: rgba(255, 255, 255, 0.6);
+    }
+    .font-style{
+        font-style: normal;
     }
     
 
