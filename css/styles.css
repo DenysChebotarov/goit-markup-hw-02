@@ -5,6 +5,7 @@
 --second-color: #757575;
 --third-color:  #FFFFFF;
 --background-main-footer: #2F303A;
+--focus-color:  #2196F3;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -22,17 +23,22 @@ body {
    
 .link:hover, 
 .link:focus{
-    color: #2196F3;
+    color: var(--focus-color)
 }
 .visually-hidden {  
     position: absolute;  width: 1px;  height: 1px;  margin: -1px;  border: 0;  padding: 0;  white-space: nowrap;  clip-path: inset(100%);  clip: rect(0 0 0 0);  overflow: hidden;
 }
-.header-background,
+.background-header,
 .background-photo{
     background-color: var(--third-color);
 }
 .background-about{ 
     background-color: #F5F4FA;
+}
+.background-peculiarities,
+.background-works,
+.background-portfolio {
+    color: #F5F5F5;
 }
 
 /*HEADER*/
@@ -47,7 +53,7 @@ body {
     }
 
 .first-part {
-    color: #2196F3;
+    color: var(--focus-color)
 }
 .header-link{
     font-weight: 500;
@@ -85,8 +91,13 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--third-color);
-    background-color:  #2196F3;
+    background-color: var(--focus-color);
     cursor: pointer;
+}
+.button:hover,
+.button:focus {
+    background-color: #188CE8
+
 }
     
 .peculiarities{
@@ -138,17 +149,17 @@ body {
     line-height: calc(26 / 16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--third-color);
-    background:  #2196F3;
+    color: #212121;
     cursor: pointer;
 }
 .main-btn:hover,
-.main-btn:focus,
-.button:hover,
-.button:focus {
-    background-color: #188CE8
-
+.main-btn:focus {
+    background-color: var(--focus-color);
+    color: var(--third-color)
+    
 }
+
+
 
 .title{
     font-weight: 700;
